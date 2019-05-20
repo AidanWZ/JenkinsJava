@@ -6,9 +6,9 @@ node('tester') {
     final String gitBase = 'Hello World'    
         
     stage('source') {
-        git 
+        git 'https://github.com/AidanWZ/JenkinsJava.git'
     }
-    stage('print') {
-        sh HelloWorld
+    stage('build') {
+        sh 'HelloWorld'
     }
 
